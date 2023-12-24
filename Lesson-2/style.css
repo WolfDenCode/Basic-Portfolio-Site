@@ -114,3 +114,59 @@ a {
     transition: ease-in-out 0.1s;
     text-decoration: underline solid rgb(46, 162, 200) 2px;
 }
+
+#hamburger {
+    width: 30px;
+    height: 25px;
+    display: none;
+}
+
+.open-tab {
+    display: none;
+}
+
+.open-tab.active {
+    top: 10vh;
+    width: 100vw;
+    height: 60vh;
+    background-color: rgba(10, 5, 37, 1);
+    position: fixed;
+    display: block;
+}
+
+.open-tab.active a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+@media (max-width:1023px) {
+    .User-Sign {
+        display: none;
+    }
+
+    .Logo {
+        display: flex;
+    }
+
+    .Logo li {
+        font-size: 18px;
+    }
+
+    .nav-bar ul {
+        padding: 0px 20px;
+    }
+
+    .Navigation li {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+
+}
