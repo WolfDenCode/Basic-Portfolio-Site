@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans";
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(39, 30, 90);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Navbar Items*/
+
+.nav-bar {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(20, 11, 70, 0.8);
+    justify-content: center;
+    color: white;
+    position: fixed;
+    user-select: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 330px;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    cursor: pointer;
+}
+
+
+/*Logo Items*/
+
+.Logo {
+    gap: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: ease-in-out 0.1s;
+}
+
+.Logo:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.1s;
+}
+
+/*User-Sign Items*/
+
+.User-Sign {
+    display: flex;
+    gap: 30px;
+
+}
+
+.User-Sign li {
+    padding: 6px 30px;
+    border: 2px white solid;
+    border-radius: 40px;
+    transition: 0.2s ease-in-out;
+    font-weight: 800;
+}
+
+.User-Sign li:nth-of-type(2) {
+    background-color: rgb(81, 193, 231);
+    color: rgb(255, 255, 255);
+}
+
+.User-Sign li:hover {
+    background-color: rgb(55, 40, 134);
+}
+
+.User-Sign li:nth-of-type(2):hover {
+    background-color: rgb(69, 163, 194);
+}
+
+/*Navigation Items*/
+
+.Navigation {
+    display: flex;
+    gap: 45px;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.Navigation li {
+    transition: ease-in-out 0.1s;
+    text-decoration: underline solid rgba(0, 0, 0, 0);
+    text-underline-offset: 4px;
+}
+
+.Navigation li:hover {
+    transition: ease-in-out 0.1s;
+    text-decoration: underline solid white 2px;
+}
+
+#Highlighted {
+    color: rgb(54, 184, 227);
+}
+
+.Navigation #Highlighted:hover {
+    transition: ease-in-out 0.1s;
+    text-decoration: underline solid rgb(46, 162, 200) 2px;
+}
