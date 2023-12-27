@@ -1,9 +1,9 @@
-const openTab = document.getElementById("pop-up")
+const mobilebar = document.getElementById("popup");
 
 function showTab() {
-    if (openTab.classList.contains("active")) {
-        openTab.classList.remove("active")
-    } else {
-        openTab.classList.add("active")
-    }
+  if (mobilebar.classList.contains("active")) {
+    mobilebar.classList.remove("active");
+  } else {
+    mobilebar.classList.add("active");
+  }
 }

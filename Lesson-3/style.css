@@ -1,234 +1,230 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Noto Sans";
-    margin: 0;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: rgb(39, 30, 90);
+  font-family: "Noto Sans";
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: rgb(39, 30, 90);
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /*Navbar Items*/
 
-.nav-bar {
-    display: flex;
-    width: 100vw;
-    height: 10vh;
-    background-color: rgba(20, 11, 70, 1);
-    color: white;
-    position: fixed;
-    user-select: none;
-    top: 0;
+.navbar {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(20, 11, 70, 1);
+  color: white;
+  position: fixed;
+  user-select: none;
+  top: 0;
 }
 
-.nav-bar ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 100vw;
-    align-items: center;
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100vw;
+  align-items: center;
 }
 
-.nav-bar ul li {
-    cursor: pointer;
+.navbar ul li {
+  cursor: pointer;
 }
-
 
 /*Logo Items*/
 
-.Logo {
-    gap: 10px;
-    font-size: 25px;
-    font-weight: bolder;
-    transition: ease-in-out 0.1s;
+.logo {
+  gap: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+  transition: ease-in-out 0.1s;
 }
 
-.Logo:hover {
-    transform: scale(1.1);
-    transition: ease-in-out 0.1s;
+.logo:hover {
+  transform: scale(1.1);
 }
 
 /*User-Sign Items*/
 
-.User-Sign {
-    display: flex;
-    gap: 30px;
-    margin-right: 50px;
+.user-sign {
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
 }
 
-.User-Sign li {
-    padding: 6px 30px;
-    border: 2px white solid;
-    border-radius: 40px;
-    transition: 0.2s ease-in-out;
-    font-weight: 800;
+.user-sign li {
+  padding: 6px 30px;
+  border: 2px white solid;
+  border-radius: 40px;
+  transition: 0.2s ease-in-out;
+  font-weight: 800;
 }
 
-.User-Sign li:nth-of-type(2) {
-    background-color: rgb(81, 193, 231);
-    color: rgb(255, 255, 255);
+.user-sign li:nth-of-type(2) {
+  background-color: rgb(81, 193, 231);
+  color: rgb(255, 255, 255);
 }
 
-.User-Sign li:hover {
-    background-color: rgb(55, 40, 134);
+.user-sign li:hover {
+  background-color: rgb(55, 40, 134);
 }
 
-.User-Sign li:nth-of-type(2):hover {
-    background-color: rgb(69, 163, 194);
+.user-sign li:nth-of-type(2):hover {
+  background-color: rgb(69, 163, 194);
 }
 
 /*Navigation Items*/
 
-.Navigation {
-    display: flex;
-    gap: 45px;
-    font-size: 19px;
-    font-weight: 900;
+.navigation {
+  display: flex;
+  gap: 45px;
+  font-size: 19px;
+  font-weight: 900;
 }
 
-.Navigation li {
-    transition: ease-in-out 0.1s;
-    text-decoration: underline solid rgba(0, 0, 0, 0);
-    text-underline-offset: 4px;
+.navigation li {
+  transition: ease-in-out 0.1s;
+  text-decoration: underline solid rgba(0, 0, 0, 0);
+  text-underline-offset: 4px;
 }
 
-.Navigation li:hover {
-    transition: ease-in-out 0.1s;
-    text-decoration: underline solid white 2px;
+.navigation li:hover {
+  text-decoration: underline solid white 2px;
 }
 
-#Highlighted {
-    color: rgb(54, 184, 227);
+#highlighted {
+  color: rgb(54, 184, 227);
 }
 
-.Navigation #Highlighted:hover {
-    transition: ease-in-out 0.1s;
-    text-decoration: underline solid rgb(46, 162, 200) 2px;
+.navigation #highlighted:hover {
+  transition: ease-in-out 0.1s;
+  text-decoration: underline solid rgb(46, 162, 200) 2px;
 }
 
 #hamburger {
-    width: 30px;
-    height: 25px;
-    display: none;
+  width: 30px;
+  height: 25px;
+  display: none;
 }
 
-.open-tab {
-    display: none;
+.mobilebar {
+  display: none;
 }
 
-.open-tab.active {
-    top: 10vh;
-    width: 100vw;
-    height: 60vh;
-    background-color: rgba(10, 5, 37, 1);
-    position: fixed;
-    display: block;
+.mobilebar.active {
+  top: 10vh;
+  width: 100vw;
+  height: 60vh;
+  background-color: rgba(10, 5, 37, 1);
+  position: fixed;
+  display: block;
 }
 
-.open-tab.active a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
+.mobilebar.active a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.mobilebar.active a:hover {
+  background-color: rgb(54, 184, 227);
 }
 
 .home {
-    height: 105vh;
-    width: 100vw;
-    color: white;
-    text-align: center;
-}
-
-.home-trans {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin: 0;
-    height: 105vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
-    gap: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  gap: 200px;
+  color: white;
+  text-align: center;
 }
 
 .home-text {
-    margin-right: 200px;
-    width: 40vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 40vw;
 }
 
 .home-text h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .home-text p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .home h1 {
-    font-size: 50px;
-    font-weight: 2000;
+  font-size: 50px;
+  font-weight: 2000;
 }
 
 .home button {
-    padding: 14px 50px;
-    background-color: rgb(54, 184, 227);
-    color: rgb(39, 30, 90);
-    font-weight: bold;
-    font-size: 17px;
-    border: 0;
-    border-radius: 10px;
-    transition: ease-in-out 0.2s;
-    margin-top: 10px;
+  padding: 14px 50px;
+  background-color: rgb(54, 184, 227);
+  color: rgb(39, 30, 90);
+  font-weight: bold;
+  font-size: 17px;
+  border: 0;
+  border-radius: 10px;
+  transition: ease-in-out 0.2s;
+  margin-top: 10px;
 }
 
 .home button:hover {
-    transition: 0.2s ease-in-out;
-    background-color: rgb(51, 168, 207);
-    transform: scale(1.05);
+  background-color: rgb(51, 168, 207);
+  transform: scale(1.05);
 }
 
 .home-pic {
-    height: 450px;
-    width: 350px;
-    border-radius: 20px 5px 20px 5px;
-    background-image: url(prof.png);
-    background-size: cover;
+  height: 550px;
+  width: 400px;
+  background-image: url(prof.png);
+  background-size: cover;
 }
 
-@media (max-width:1023px) {
-    .User-Sign {
-        display: none;
-    }
+@media (max-width: 1023px) {
+  .user-sign {
+    display: none;
+  }
 
-    .Logo {
-        display: flex;
-    }
+  .logo {
+    display: flex;
+  }
 
-    .Logo li {
-        font-size: 18px;
-    }
+  .logo li {
+    font-size: 18px;
+  }
 
-    .nav-bar ul {
-        padding: 0px 20px;
-    }
+  .navbar ul {
+    padding: 0px 20px;
+  }
 
-    .Navigation li {
-        display: none;
-    }
+  .navigation li {
+    display: none;
+  }
 
-    #hamburger {
-        display: block;
-        margin-right: 30px;
-        cursor: pointer;
-    }
-
-
+  #hamburger {
+    display: block;
+    margin-right: 30px;
+    cursor: pointer;
+  }
 }
