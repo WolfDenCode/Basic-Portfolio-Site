@@ -208,7 +208,28 @@ a {
   background-size: 90%;
   background-position: center;
 }
-
+@media (max-width: 1150px) {
+  .home {
+    padding: 5rem 2.5rem;
+    gap: 50px;
+  }
+  .home-pic {
+    height: 400px;
+    width: 250px;
+  }
+  .home-text {
+    max-width: 25rem;
+  }
+  .home h1 {
+    font-size: 40px;
+  }
+  .home h2 {
+    font-size: 27px;
+  }
+  .home p {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1023px) {
   .user-sign {
     display: none;
