@@ -158,8 +158,9 @@ a {
 
 .home-text {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   width: 40vw;
 }
@@ -178,6 +179,7 @@ a {
 }
 
 .home button {
+  max-width: 200px;
   padding: 14px 50px;
   background-color: rgb(54, 184, 227);
   color: rgb(39, 30, 90);
