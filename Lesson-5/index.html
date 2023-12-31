@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1ef512e328.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul>
+        <div class="logo">
+          <li>WolfDenCode.</li>
+        </div>
+        <div class="navigation">
+          <a href="#">
+            <li id="highlighted">Home</li>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Projects</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+        </div>
+        <div class="user-sign">
+          <li>Sign In</li>
+          <li>Sign Up</li>
+        </div>
+        <img src="Hamburger.png" id="hamburger" onclick="showTab()" />
+      </ul>
+    </div>
+    <div class="mobilebar" id="popup">
+      <a href="#">
+        <div class="mobilebar-element">
+          <h3>Home</h3>
+        </div>
+      </a>
+      <a href="#">
+        <div class="mobilebar-element">
+          <h3>About</h3>
+        </div>
+      </a>
+      <a href="#">
+        <div class="mobilebar-element">
+          <h3>Projects</h3>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="mobilebar-element">
+          <h3>Contact</h3>
+        </div>
+      </a>
+      <a href="#">
+        <div class="mobilebar-element">
+          <h3>Sign In</h3>
+        </div>
+      </a>
+      <a href="#">
+        <div class="mobilebar-element">
+          <h3>Sign Up</h3>
+        </div>
+      </a>
+    </div>
+    <div class="home">
+      <div class="home-pic"></div>
+      <div class="home-text">
+        <h1>Welcome to WolfDenCode</h1>
+        <h2 id="highlighted">We are a team of developers</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        </p>
+        <button>Click To Know More!</button>
+      </div>
+    </div>
+    <div class="about">
+      <div class="about-text">
+        <h1 id="highlighted">About Us</h1>
+        <h3>
+          As a team of developers, our mission is to help your business and
+          career grow. <br />
+          <span id="highlighted"> Here is what we offer</span>
+        </h3>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 class="card-title">Web Development</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui
+            quaerat fugit quas veniam perferendis repudiandae sequi, dolore
+            quisquam illum.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3 class="card-title">Responsive Design</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui
+            quaerat fugit quas veniam perferendis repudiandae sequi, dolore
+            quisquam illum.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <h3 class="card-title">Cloud Technology</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui
+            quaerat fugit quas veniam perferendis repudiandae sequi, dolore
+            quisquam illum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
