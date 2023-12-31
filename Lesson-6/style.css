@@ -267,6 +267,52 @@ a {
   text-transform: uppercase;
 }
 
+.projects {
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+}
+
+.project-description {
+  text-align: left;
+  max-width: 50%;
+  padding: 30px;
+}
+.project-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #36b8e3;
+  box-shadow: 0 0 20px #888888;
+}
+.project-button:hover {
+  background-color: white;
+  color: black;
+}
+.project-image {
+  max-width: 50%;
+  max-height: 50%;
+  box-shadow: 0 0 20px #888888;
+}
+
 @media (max-width: 1150px) {
   .home {
     padding: 5rem 2.5rem;
